@@ -13,8 +13,8 @@ class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: SvgPicture.asset('logo-title.svg', height: 40,),
+      appBar: AppBar( //A custom appbar is needed to conform with the leading space of the original design
+        title: SvgPicture.asset('logo-title.svg', height: 35,),
         backgroundColor: Color(0xff172044),
         actionsPadding: EdgeInsetsGeometry.only(right: 20),
         actions: [
