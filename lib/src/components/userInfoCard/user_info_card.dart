@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nebulae/src/components/appButton/app_button.dart';
 import 'package:nebulae/src/components/genericAppText/generic_app_text.dart';
 
 class UserInfoCard extends StatefulWidget {
@@ -30,13 +31,8 @@ class _UserInfoCardState extends State<UserInfoCard> {
             Row(
               children: [
                 GenericappText(text:'Name', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),),
-                ElevatedButton(
-                  onPressed: () =>{print('follow')},
-                  style: ButtonStyle(
-                    elevation: WidgetStateProperty.all(3),
-                    backgroundColor: WidgetStateProperty.all(Color(0xff583BD0)),
-                    fixedSize: WidgetStateProperty.all(Size(120, 40))
-                  ),
+                AppButton(
+                  onPressed: ()=>{print('follow')}, 
                   child: GenericappText(text:'Seguir', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 20),)
                 )
               ],
