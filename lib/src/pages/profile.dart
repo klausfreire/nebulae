@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:nebulae/src/components/appbarButton/app-bar-button.dart';
+import 'package:nebulae/src/components/appbarButton/app_bar_button.dart';
+import 'package:nebulae/src/components/userInfoCard/user_info_card.dart';
 
 class Profile extends StatefulWidget {
   const Profile({super.key});
@@ -22,6 +23,12 @@ class _ProfileState extends State<Profile> {
           AppBarButton(text: 'Sobre', onPressed: ()=> print('Sobre')),
           AppBarButton(text: 'Contato', onPressed: ()=> print('Contato')),
           AppBarButton(text: 'Sair', onPressed: ()=> print('Sair')),
+        ],
+      ),
+      body: Column(
+        children: [
+          UserInfoCard(),
+          Divider()
         ],
       ),
     );

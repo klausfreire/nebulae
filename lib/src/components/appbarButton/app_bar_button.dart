@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nebulae/src/components/genericAppText/generic-app-text.dart';
+import 'package:nebulae/src/components/genericAppText/generic_app_text.dart';
 
 class AppBarButton extends StatefulWidget {
   const AppBarButton({super.key, required this.text, required this.onPressed});
